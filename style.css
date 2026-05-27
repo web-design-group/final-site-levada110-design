@@ -1,0 +1,898 @@
+body {
+    font-family: Inria Serif;
+    margin: 100;
+    background: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    background: #f5f5f5;
+    font-size: larger;
+}
+
+nav {
+    background: #6b7330;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+nav a {
+    color: white;
+    margin: 0 50px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.about {
+    background: #D6DABB;
+    text-align: center;
+    margin: 0 auto;
+    padding: 7px;
+    border-radius: 20px;
+    max-width: 1300px;
+    font-size: x-large;
+    font-family: Cormorant Garamond;
+    margin-bottom: 50px;
+}
+
+/* Основной блок секции */
+.featured {
+    display: flex;
+    align-items: stretch; /* Растягивает текст и фото на одну высоту */
+    background: #D6DABB;
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы, чтобы фото прилипло */
+    overflow: hidden;
+}
+
+/* Блок с текстом */
+.featured-text {
+    flex: 1; /* Занимает половину места */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    text-align: center;
+}
+
+.featured-text h2 {
+    margin-bottom: 20px;
+}
+
+.featured-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 50px; /* Увеличили отступ, чтобы кнопка ушла ниже */
+}
+
+/* Картинка, которая "прилипает" */
+.featured img {
+    width: 50%; /* Занимает ровно вторую половину */
+    object-fit: cover; /* Чтобы фото не искажалось при растягивании */
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+}
+
+/* Жирная кнопка */
+.featured button {
+    background: #EBA53D;
+    color: white;
+    padding: 16px 45px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 700 !important; /* Максимально жирный шрифт */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: center; /* Центрирует кнопку */
+}
+
+.featured button:hover {
+    transform: scale(1.05);
+    background: #d9922e;
+}
+
+
+.featured button:active {
+    transform: scale(0.98); 
+}
+
+.cards-title {
+     margin-left: 250px;
+     margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    font-family: Cormorant Garamond;
+}
+
+.card img {
+width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+width: 530px;
+min-height: 550px; 
+background: white;
+border-radius: 15px;
+overflow: hidden;
+text-align: center;
+font-size: x-large;
+display: flex;
+flex-direction: column;
+}
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: auto; 
+    padding: 20px 30px; 
+    margin-bottom: 10px;
+}
+
+.price {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    font-size: 28px; 
+    color: #333;
+}
+
+.card button {
+    background: #EBA53D; 
+    border: none;
+    padding: 12px 35px; 
+    border-radius: 50px; 
+    
+    color: white;
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-size: 18px; 
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card button:hover {
+    background: #d9922e;
+    transform: scale(1.05);
+}
+.footer {
+    width: 100%;
+    background: #6b7330; 
+    color: white;
+    padding: 40px 0; 
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end; 
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-social img {
+    width: 40px;
+    height: 40px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-btn {
+    background: #6b7330;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #5a6128;
+}
+.categories {
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cat-btn {
+    background: white;
+    border: 2px solid #6b7330;
+    color: #6b7330;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.cat-btn.active, .cat-btn:hover {
+    background: #6b7330;
+    color: white;
+}
+
+.btn {
+display: inline-block; 
+    text-decoration: none; 
+    background: #EBA53D; 
+    color: white !important; 
+    text-align: center;
+    line-height: 1; 
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: transform 0.2s, background 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+background: #d9922e;
+    transform: scale(1.05);
+    text-decoration: none; 
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inria Serif', serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0 10px;
+    background: #f5f5f5;
+    font-size: larger;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    background: #6b7330;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+nav a {
+    color: white;
+    margin: 0 40px; /* Широкие отступы между ссылками */
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- РАСШИРЯЕМ КОНТЕЙНЕР ДЛЯ ГАЛЕРЕИ И ОПИСАНИЯ --- */
+.container {
+    max-width: 1200px; /* Сделали значительно шире! */
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.page-title {
+    font-family: 'Cormorant Garamond', serif; /* Ваш оригинальный шрифт заголовков */
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- ГАЛЕРЕЯ (растянется под новую ширину) --- */
+.gallery {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    height: 480px; /* Увеличили высоту, чтобы картинки смотрелись пропорционально */
+}
+
+.gallery-main {
+    flex: 1; /* Левая часть */
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.gallery-grid {
+    flex: 1; /* Правая часть */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #ddd; /* Серый фон, пока картинки не загрузились */
+}
+
+/* --- БЛОК ОПИСАНИЯ (тоже станет шире) --- */
+.description-block {
+    background-color: #ced6b9;
+    border-radius: 30px;
+    padding: 50px 60px;
+}
+
+.description-block h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.description-block p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+/* --- БЛОК ПОКУПКИ (Серый фон) --- */
+.purchase-block {
+    display: flex;
+    justify-content: space-around; /* Изменил на space-around для лучшего баланса */
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 80px; /* Чтобы страница не заканчивалась резко */
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- ЛЕВАЯ ЧАСТЬ (Даты и билеты) --- */
+.datetime-selectors {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.custom-select {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ticket-row {
+    display: flex;
+    align-items: center;
+    width: 320px; /* Фиксируем ширину, чтобы колонки стояли ровно */
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.ticket-row .type {
+    width: 130px;
+    font-weight: 500;
+}
+
+.ticket-row .price {
+    width: 60px;
+    text-align: left;
+}
+
+/* Счетчики с кнопками */
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.counter-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    line-height: 1;
+}
+
+.count {
+    font-size: 18px;
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+}
+
+/* --- ПРАВАЯ ЧАСТЬ (Белая карточка) --- */
+.payment-card {
+    background: white;
+    width: 340px;
+    padding: 40px 30px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.04);
+}
+
+.payment-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.payment-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Круглые поля ввода */
+.payment-card input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px; /* Делает их овальными "таблетками" */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center; /* Центрируем текст и плейсхолдер */
+    box-sizing: border-box;
+    outline: none;
+}
+
+.total-cost {
+    margin: 15px 0 25px;
+}
+
+.total-cost p {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.total-cost strong {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Оранжевая кнопка */
+.pay-btn {
+    background: #EBA53D; 
+    color: white;
+    border: none;
+    padding: 16px 50px;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pay-btn:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+/* Основной контейнер отзывов */
+.reviews-section {
+    margin: 80px auto; /* Центрируем всю секцию */
+    max-width: 850px;  /* Чуть увеличил ширину для более крупных шрифтов */
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 36px;   /* Увеличил заголовок "Отзывы" */
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review-card {
+    background: #F9F9F9;
+    padding: 35px 40px; /* Увеличил внутренние отступы */
+    border-radius: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review-header {
+    display: flex;
+    justify-content: flex-start; /* Имя и звезды рядом */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.review-name {
+    font-weight: 700;
+    font-size: 22px;    /* Увеличил шрифт имени */
+}
+
+.review-rating {
+    color: #EBA53D;     /* ТОТ САМЫЙ ЦВЕТ: золотисто-оранжевый как у кнопки оплаты */
+    font-size: 20px;    /* Сделал звезды крупнее */
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 22px;    /* Увеличил основной текст отзыва */
+    line-height: 1.6;   /* Увеличил межстрочный интервал для легкого чтения */
+    color: #333;
+    margin: 0;
+}
+
+/* Стили для страницы "О компании" */
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-lead {
+    font-size: 20px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Сетка гидов */
+.guides-section {
+    margin-bottom: 80px;
+}
+
+.guides-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.guide-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 300px;
+    transition: 0.3s;
+}
+/* Имена гидов */
+.guide-card h3 {
+    font-size: 26px !important;
+    margin-bottom: 12px;
+}
+
+/* Описание гидов */
+.guide-card p {
+    font-size: 19px !important;
+    line-height: 1.5;
+}
+
+.guide-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.guide-photo {
+    font-size: 50px;
+    background: #f0f0f0;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+/* Преимущества */
+.benefits-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+    background: #F1F4E8; /* Нежный оливковый цвет как в описании */
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.benefit-item {
+    text-align: center;
+}
+.benefit-item h4 {
+    font-size: 26px !important;
+    margin-bottom: 15px;
+}
+
+/* Описание под заголовками */
+.benefit-item p {
+    font-size: 20px !important;
+    line-height: 1.5;
+    max-width: 300px; /* Чтобы текст не расплывался слишком широко */
+    margin: 0 auto;
+}
+
+.benefit-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Блок оплаты и реквизитов */
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* Значительное увеличение логотипов оплаты */
+.pay-logo {
+    height: 80px; /* Было 40px, увеличили в два раза */
+    width: auto;
+    object-fit: contain;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении, чтобы смотрелось интереснее */
+.pay-logo:hover {
+    transform: scale(1.1);
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Увеличили расстояние между логотипами */
+    margin-top: 20px;
+}
+/* Увеличение блока способов оплаты */
+.info-column h3 {
+    font-size: 28px !important; /* Увеличиваем заголовок "Способы оплаты" */
+    margin-bottom: 15px;
+}
+
+.info-column p {
+    font-size: 20px !important; /* Увеличиваем текст описания */
+    line-height: 1.4;
+}
+
+/* Максимальное увеличение картинки оплаты */
+.payment-icons img.pay-logo {
+    height: 120px !important; /* Значительное увеличение высоты */
+    width: auto;
+    margin-top: 20px;
+    display: block; /* Чтобы картинка не сжималась в строке */
+}
+
+/* Увеличение текста в правой колонке (Реквизиты) */
+.info-column:last-child p, 
+.info-column:last-child a {
+    font-size: 18px !important;
+    line-height: 1.6;
+}
+
+/* Увеличение "Мы в:" в футере */
+.footer-social p {
+    font-size: 28px !important; /* Делаем надпись крупной и заметной */
+    font-weight: bold;
+}
+
+/* Стили страницы контактов */
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contacts-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.contact-icon {
+    font-size: 32px;
+    background: #F1F4E8;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.contact-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 350px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #EBA53D;
+}
+
+/* Карта */
+.map-placeholder {
+    width: 100%;
+    height: 400px;
+    background: #eee;
+    border-radius: 40px;
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 20px;
+    text-align: center;
+    border: 2px dashed #ccc;
+}
+
+.social-icons-row img {
+    height: 40px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
