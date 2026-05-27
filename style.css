@@ -84,7 +84,7 @@ nav a {
     padding: 16px 45px;
     border-radius: 50px;
     text-transform: uppercase;
-    font-weight: 600 !important; /* Максимально жирный шрифт */
+    font-weight: 500 !important; /* Максимально жирный шрифт */
     font-size: 18px;
     border: none;
     cursor: pointer;
