@@ -38,19 +38,19 @@ nav a {
     margin-bottom: 50px;
 }
 
-/* Основной блок секции */
+
 .featured {
     display: flex;
-    align-items: stretch; /* Растягивает текст и фото на одну высоту */
+    align-items: stretch; 
     background: #D6DABB;
-    margin: 0; /* Убирает внешние отступы */
-    padding: 0; /* Убирает внутренние отступы, чтобы фото прилипло */
+    margin: 0; 
+    padding: 0; 
     overflow: hidden;
 }
 
-/* Блок с текстом */
+
 .featured-text {
-    flex: 1; /* Занимает половину места */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,26 +65,26 @@ nav a {
 .featured-text p {
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 50px; /* Увеличили отступ, чтобы кнопка ушла ниже */
+    margin-bottom: 50px; 
 }
 
-/* Картинка, которая "прилипает" */
+
 .featured img {
-    width: 50%; /* Занимает ровно вторую половину */
-    object-fit: cover; /* Чтобы фото не искажалось при растягивании */
+    width: 50%; 
+    object-fit: cover; 
     margin: 0 !important;
     padding: 0 !important;
     display: block;
 }
 
-/* Жирная кнопка */
+
 .featured button {
     background: #EBA53D;
     color: white;
     padding: 16px 45px;
     border-radius: 50px;
     text-transform: uppercase;
-    font-weight: 700 !important; /* Максимально жирный шрифт */
+    font-weight: 600 !important; /* Максимально жирный шрифт */
     font-size: 18px;
     border: none;
     cursor: pointer;
